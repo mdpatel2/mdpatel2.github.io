@@ -12,16 +12,16 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Your MSP co-pilot" />
 <meta property="og:description" content="Your MSP co-pilot" />
-<link rel="canonical" href="clairify.ai/category/marketing/" />
-<meta property="og:url" content="clairify.ai/category/marketing/" />
+<link rel="canonical" href="http://localhost:4002/category/marketing/" />
+<meta property="og:url" content="http://localhost:4002/category/marketing/" />
 <meta property="og:site_name" content="Clairify" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="marketing" />
 <script type="application/ld+json">
-{"url":"clairify.ai/category/marketing/","description":"Your MSP co-pilot","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"clairify.ai/images/clairify%20-%20favicon-01.png"}},"headline":"marketing","@type":"WebPage","@context":"https://schema.org"}</script>
+{"url":"http://localhost:4002/category/marketing/","description":"Your MSP co-pilot","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4002/images/clairify%20-%20favicon-01.png"}},"headline":"marketing","@type":"WebPage","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
-		<link type="application/atom+xml" rel="alternate" href="clairify.ai/feed.xml" title="Clairify" />
+		<link type="application/atom+xml" rel="alternate" href="http://localhost:4002/feed.xml" title="Clairify" />
 
 		<link rel="stylesheet" href="/css/screen.css">
 		<link rel="icon" type="image/png" href="/images/clairify - favicon-01.png">
@@ -39,7 +39,6 @@
 </nav>
 
 			</div>
-		</header>
 		</header>
 		<div class="content">
 	<section class="page">
@@ -91,7 +90,7 @@
 	</section>
 </div>
 
-		<footer>
+		<!-- <footer>
 			<div class="container">
 				<p class="editor-link"><a href="cloudcannon:collections/_data/footer.yml" class="btn"><strong>&#9998;</strong> Edit footer</a></p>
 				<div class="footer-columns">
@@ -99,10 +98,20 @@
 				</div>
 				<p class="copyright">&copy; 2024 MyApp Ltd. • <a href="#">Terms</a> &amp; <a href="#">Privacy</a> • <a href="https://cloudcannon.com/">Template by CloudCannon</a></p>
 			</div>
-		</footer>
+		</footer> -->
 		<!-- Rasa Chat Widget -->
-<div id="rasa-chat-widget" data-websocket-url="http://34.125.71.145:5005"></div>
+<div id="rasa-chat-widget" data-websocket-url="http://34.125.71.145:5005" data-primary="#65B4BA" data-primary-highlight="#20576a"></div>
 <script src="https://unpkg.com/@rasahq/rasa-chat" type="application/javascript"></script>
+<script>
+    // Wait for the DOM to be fully loaded
+    document.addEventListener('DOMContentLoaded', function () {
+        // Get the trigger link and attach a click event listener
+        document.getElementById('triggerButtonLink').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default anchor behavior
+            document.querySelector('.css-13y41na').click(); // Trigger the button click
+        });
+    });
+</script>
 		<script>
 			document.getElementById("open-nav").onclick = function () {
 				document.body.classList.toggle("nav-open");

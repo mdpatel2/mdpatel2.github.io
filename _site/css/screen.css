@@ -1,7 +1,7 @@
 @charset "UTF-8";
 footer .footer-columns, .contact-box, .staff, .plans { display: -webkit-box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; }
 
-html { background: #2b2b40; }
+html { background: #020208; }
 
 html, body { margin: 0; padding: 0; }
 
