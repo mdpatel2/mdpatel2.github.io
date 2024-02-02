@@ -12,16 +12,16 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="This does not exist" />
 <meta property="og:description" content="This does not exist" />
-<link rel="canonical" href="clairify.ai/404.html" />
-<meta property="og:url" content="clairify.ai/404.html" />
+<link rel="canonical" href="http://localhost:4002/404.html" />
+<meta property="og:url" content="http://localhost:4002/404.html" />
 <meta property="og:site_name" content="Clairify" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Not Found" />
 <script type="application/ld+json">
-{"url":"clairify.ai/404.html","description":"This does not exist","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"clairify.ai/images/clairify%20-%20favicon-01.png"}},"headline":"Not Found","@type":"WebPage","@context":"https://schema.org"}</script>
+{"url":"http://localhost:4002/404.html","description":"This does not exist","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4002/images/clairify%20-%20favicon-01.png"}},"headline":"Not Found","@type":"WebPage","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
-		<link type="application/atom+xml" rel="alternate" href="clairify.ai/feed.xml" title="Clairify" />
+		<link type="application/atom+xml" rel="alternate" href="http://localhost:4002/feed.xml" title="Clairify" />
 
 		<link rel="stylesheet" href="/css/screen.css">
 		<link rel="icon" type="image/png" href="/images/clairify - favicon-01.png">
@@ -65,7 +65,12 @@
 			</div>
 		</footer> -->
 		<!-- Rasa Chat Widget -->
-<div id="rasa-chat-widget" data-websocket-url="http://34.125.71.145:5005" data-primary="#65B4BA" data-primary-highlight="#20576a"></div>
+<div id="rasa-chat-widget"
+    data-websocket-url="http://localhost:5005"
+    data-primary="#65B4BA"
+    data-primary-highlight="#20576a"
+    data-initial-payload="Imagine a question that you have right now about your business. Ask Clairify, and it will answer as if you were the owner of a fictional MSP called Tech Solutions.">
+</div>
 <script src="https://unpkg.com/@rasahq/rasa-chat" type="application/javascript"></script>
 <script>
     // Wait for the DOM to be fully loaded
@@ -74,6 +79,7 @@
         document.getElementById('triggerButtonLink').addEventListener('click', function(event) {
             event.preventDefault(); // Prevent default anchor behavior
             document.querySelector('.css-13y41na').click(); // Trigger the button click
+            setTimeout(function() {document.querySelector('.css-1abdig3').style.zIndex = '1'}, 3000);
         });
     });
 </script>

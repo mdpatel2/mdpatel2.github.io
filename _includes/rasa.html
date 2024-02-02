@@ -1,5 +1,10 @@
 <!-- Rasa Chat Widget -->
-<div id="rasa-chat-widget" data-websocket-url="http://{{ site.rasa_ip_address }}:5005" data-primary="#65B4BA" data-primary-highlight="#20576a"></div>
+<div id="rasa-chat-widget"
+    data-websocket-url="http://{{ site.rasa_ip_address }}:5005"
+    data-primary="#65B4BA"
+    data-primary-highlight="#20576a"
+    data-initial-payload="Imagine a question that you have right now about your business. Ask Clairify, and it will answer as if you were the owner of a fictional MSP called Tech Solutions.">
+</div>
 <script src="https://unpkg.com/@rasahq/rasa-chat" type="application/javascript"></script>
 <script>
     // Wait for the DOM to be fully loaded
@@ -8,6 +13,7 @@
         document.getElementById('triggerButtonLink').addEventListener('click', function(event) {
             event.preventDefault(); // Prevent default anchor behavior
             document.querySelector('.css-13y41na').click(); // Trigger the button click
+            setTimeout(function() {document.querySelector('.css-1abdig3').style.zIndex = '1'}, 3000);
         });
     });
 </script>
