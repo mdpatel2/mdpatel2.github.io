@@ -9,9 +9,9 @@ google_maps_javascript_api_key:
 disqus_shortname:
 
 # Rasa server public IP address (static)
-# rasa_ip_address: 34.16.195.203
+rasa_ip_address: 34.16.195.203
 # Rasa server on local dev environment
-rasa_ip_address: localhost
+# rasa_ip_address: localhost
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /images/clairify - favicon-01.png
