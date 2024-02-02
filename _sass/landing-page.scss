@@ -3,10 +3,17 @@
 	color: #fff;
 	text-align: center;
 	margin: 0;
-	padding: 100px 0;
+	padding: 50px 0;
 
 	h2 {
 		margin-bottom: 50px;
+	}
+
+	.button {
+		font-size: 1.38em;
+		font-weight: 300;
+		max-width: 1140px;
+		margin: 0px 25% 0 25%;
 	}
 }
 
@@ -47,13 +54,13 @@
 @media #{$desktop} {
 	.flex {
 		@include flexbox;
-		align-items: center;
+		align-items: first baseline;
 		flex-direction: row;
 
 		.text, .image {
 			-webkit-flex: 1;
 			flex: 1;
-			padding: 0 20px;
+			padding: 20px 20px 20px 0px;
 		}
 	}
 
@@ -61,3 +68,14 @@
 		flex-direction: row-reverse;
 	}
 }
+
+// Rasa styles: This code identifies the first utterance in the chat.
+// It has to be the user because the bot can't go first by default.
+// The first utternace will come from data-initial-payload.
+
+div.css-14otd4b
+  div[role="button"]:first-of-type
+	div[data-qa="conversation-message-bubbles_div"] {
+		background-color: #9f9a8d !important;
+		border-radius: 4px 4px 4px 4px !important;
+	}
