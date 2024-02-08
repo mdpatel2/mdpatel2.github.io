@@ -39,8 +39,6 @@ p, address { font-size: 1.38em; color: #666; margin-bottom: 20px; font-weight: 3
 
 @media (min-width: 768px) { .flex { display: -webkit-box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; align-items: first baseline; flex-direction: row; } .flex .text, .flex .image { -webkit-flex: 1; flex: 1; padding: 20px 20px 20px 0px; } .content section:nth-child(even) .flex { flex-direction: row-reverse; } }
 
-div.css-14otd4b div[role="button"]:first-of-type div[data-qa="conversation-message-bubbles_div"] { background-color: #9f9a8d !important; border-radius: 4px 4px 4px 4px !important; }
-
 .container, .text-container { margin: 0 auto; position: relative; padding: 0 20px; }
 
 .text-container { max-width: 750px; }
