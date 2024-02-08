@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: clairify.ai/sitemap.xml
+Sitemap: http://localhost:4002/sitemap.xml
